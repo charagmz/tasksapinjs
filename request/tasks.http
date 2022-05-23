@@ -1,0 +1,36 @@
+###
+GET http://localhost:3000/api/tasks?size=6&page=0
+
+###
+GET http://localhost:3000/api/tasks?size=2&page=0&title=tarea
+
+###
+GET http://localhost:3000/api/tasks/done
+
+
+###
+GET http://localhost:3000/api/tasks/628a2010f40339e4db2ebd97
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "otro test",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+PUT http://localhost:3000/api/tasks/628b4eeb8681ed4a8bed5d35
+Content-Type: application/json
+
+{
+    "title": "Actualizado nombre test",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+DELETE http://localhost:3000/api/tasks/628b4eeb8681ed4a8bed5d35
